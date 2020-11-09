@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 218
+  Left = 493
   Height = 450
-  Top = 156
+  Top = 168
   Width = 715
   ActiveControl = LocalValueEdit
   Caption = 'Mini Translator'
@@ -21,27 +21,27 @@ object MainForm: TMainForm
   LCLVersion = '2.1.0.0'
   object LeftSplitter: TSplitter
     Left = 295
-    Height = 302
-    Top = 105
+    Height = 303
+    Top = 104
     Width = 5
   end
   object UpSplitter: TSplitter
     Cursor = crVSplit
     Left = 0
     Height = 5
-    Top = 100
+    Top = 99
     Width = 715
     Align = alTop
     ResizeAnchor = akTop
   end
   object Panel2: TPanel
     Left = 300
-    Height = 302
-    Top = 105
+    Height = 303
+    Top = 104
     Width = 415
     Align = alClient
     BevelOuter = bvNone
-    ClientHeight = 302
+    ClientHeight = 303
     ClientWidth = 415
     TabOrder = 0
     object Splitter1: TSplitter
@@ -110,12 +110,12 @@ object MainForm: TMainForm
     end
     object LocalPanel: TPanel
       Left = 0
-      Height = 196
+      Height = 197
       Top = 106
       Width = 415
       Align = alClient
       BevelOuter = bvNone
-      ClientHeight = 196
+      ClientHeight = 197
       ClientWidth = 415
       TabOrder = 0
       object Label6: TLabel
@@ -136,7 +136,7 @@ object MainForm: TMainForm
       end
       object LocalValueEdit: TMemo
         Left = 2
-        Height = 157
+        Height = 158
         Top = 38
         Width = 409
         Anchors = [akTop, akLeft, akRight, akBottom]
@@ -172,12 +172,12 @@ object MainForm: TMainForm
   end
   object LeftLayoutPanel: TPanel
     Left = 0
-    Height = 302
-    Top = 105
+    Height = 303
+    Top = 104
     Width = 295
     Align = alLeft
     BevelOuter = bvNone
-    ClientHeight = 302
+    ClientHeight = 303
     ClientWidth = 295
     TabOrder = 1
     object Panel3: TPanel
@@ -222,12 +222,12 @@ object MainForm: TMainForm
     end
     object Panel4: TPanel
       Left = 0
-      Height = 258
+      Height = 259
       Top = 44
       Width = 295
       Align = alClient
       BevelOuter = bvNone
-      ClientHeight = 258
+      ClientHeight = 259
       ClientWidth = 295
       TabOrder = 1
       object Label3: TLabel
@@ -240,7 +240,7 @@ object MainForm: TMainForm
       end
       object IdentList: TListBox
         Left = 4
-        Height = 236
+        Height = 237
         Top = 21
         Width = 290
         Anchors = [akTop, akLeft, akRight, akBottom]
@@ -254,7 +254,7 @@ object MainForm: TMainForm
   object TopLayoutPanel: TPanel
     Left = 0
     Height = 74
-    Top = 26
+    Top = 25
     Width = 715
     Align = alTop
     BevelOuter = bvNone
@@ -282,12 +282,12 @@ object MainForm: TMainForm
   end
   object Panel1: TPanel
     Left = 0
-    Height = 26
+    Height = 25
     Top = 0
     Width = 715
     Align = alTop
     BevelOuter = bvNone
-    ClientHeight = 26
+    ClientHeight = 25
     ClientWidth = 715
     TabOrder = 4
     object Label4: TLabel
@@ -348,32 +348,35 @@ object MainForm: TMainForm
     Top = 407
     Width = 715
     Align = alBottom
-    BevelInner = bvLowered
-    BevelOuter = bvSpace
-    BevelWidth = 3
+    BevelOuter = bvNone
+    BorderWidth = 3
     ClientHeight = 23
     ClientWidth = 715
     TabOrder = 6
     object HintLbl: TLabel
-      Left = 6
-      Height = 11
-      Top = 6
+      Left = 3
+      Height = 17
+      Top = 3
       Width = 19
       Align = alLeft
       Caption = 'Hint'
+      Layout = tlCenter
       ParentColor = False
     end
   end
   object MainMenu: TMainMenu
+    Images = ToolbarImageList
     Left = 241
     Top = 50
     object FileMnu: TMenuItem
       Caption = 'File'
       object NewMnu: TMenuItem
         Caption = 'New'
+        ImageIndex = 0
       end
       object OpenMnu: TMenuItem
         Caption = 'Open'
+        ImageIndex = 3
         OnClick = OpenMnuClick
       end
       object ReopenFilesMnu: TMenuItem
@@ -381,6 +384,7 @@ object MainForm: TMainForm
       end
       object SaveMnu: TMenuItem
         Caption = 'Save'
+        ImageIndex = 4
         OnClick = SaveMnuClick
       end
       object _MenuItem: TMenuItem
@@ -392,6 +396,7 @@ object MainForm: TMainForm
       end
       object OptionsMnu: TMenuItem
         Caption = 'Options'
+        ImageIndex = 14
         OnClick = OptionsMnuClick
       end
       object MenuItem1: TMenuItem
@@ -399,6 +404,7 @@ object MainForm: TMainForm
       end
       object ExitMnu: TMenuItem
         Caption = 'Exit'
+        ImageIndex = 19
         OnClick = ExitMnuClick
       end
     end
@@ -406,11 +412,13 @@ object MainForm: TMainForm
       Caption = 'Project'
       object NewProjectMnu: TMenuItem
         Caption = 'New'
+        ImageIndex = 0
         OnClick = NewProjectMnuClick
       end
       object OpenProjectMnu: TMenuItem
         Caption = 'Open'
         Hint = 'Open translator project'
+        ImageIndex = 3
         OnClick = OpenProjectMnuClick
       end
       object ReopenProjectMnu: TMenuItem
@@ -418,6 +426,7 @@ object MainForm: TMainForm
       end
       object SaveProjectMnu: TMenuItem
         Caption = 'Save'
+        ImageIndex = 4
         ShortCut = 16467
         OnClick = SaveProjectMnuClick
       end
@@ -427,10 +436,12 @@ object MainForm: TMainForm
       end
       object SaveAllMnu: TMenuItem
         Caption = 'Save All'
+        ImageIndex = 5
         OnClick = SaveAllMnuClick
       end
       object Close1: TMenuItem
         Caption = 'Close'
+        ImageIndex = 6
         OnClick = Close1Click
       end
       object N8: TMenuItem
@@ -451,6 +462,7 @@ object MainForm: TMainForm
       end
       object ProjectOptionsMnu: TMenuItem
         Caption = 'Options'
+        ImageIndex = 14
         OnClick = ProjectOptionsMnuClick
       end
     end
@@ -483,6 +495,7 @@ object MainForm: TMainForm
       end
       object FindFirstMnu: TMenuItem
         Caption = 'Find'
+        ImageIndex = 12
         ShortCut = 16454
         OnClick = FindFirstMnuClick
       end
@@ -620,5 +633,40 @@ object MainForm: TMainForm
     OnShowHint = ApplicationPropertiesShowHint
     Left = 55
     Top = 50
+  end
+  object ToolbarImageList: TImageList
+    DrawingStyle = dsTransparent
+    Left = 401
+    Top = 53
+    Bitmap = {
+      4C7A140000001000000010000000560300000000000078DAED9C4B6E1B310C86
+      E712BD8AB7E9B247F0317A03CF228BAEBBEEBA9728D08DB705B2CC117C0C3536
+      A04023F3F1939C873CD60C0807893F52A2443DA899A421CD767F5C891394A72E
+      5487C47F7E06784D87567ECD1F1C4F96A7F34DF2A8A4A1DF9AEF4CEC5BBA17C3
+      B8F3EBA35D4BC93CD27E14AF49A923F3641D38E97C33BC35F6F716FF91BA91B1
+      67F0171A7BD2980DB5FD9A7C5D7F0B6FF427C223E35729CDF9F38178742CD9F3
+      7C4EADC53C6B02CF1E40E3511D5CF9A535C4DDDFC13528F55D2B5F8F01567EC2
+      BEA56DF85A0F1843246F88DBC9381D1837F6B46EE8F1BF6DFCB33685F887E7FD
+      C8FEA5015E5D0339E23FC2B718FFD1B258FA2F62D79BC399F497008F8E0150DC
+      A7E48E7FAEFFA3F12FC54F8FFF1EFF3D1FB0D0FEAF5E1F7AF301569EEA470B96
+      7FA9FD6BB4EF477874BDF788313BF395EBEC628978A7747336B871839B93499E
+      88BBB578A98E283F807A536FBF5DB69F2360FBF9FF1ECFFF3DF90B6EAF84FAB1
+      E6C93D07B0F7D3EABEA4FD39EA1FF17F0BFB8067CCDD69B932CD1F6C9DC1F8D5
+      F21652EEC092B7B0F048EED094EF0178295F61F13F3A6672F6E79A3B2CF6F778
+      E6D7E7FFF5E6FFD3E994CEE773E23E395EEB775987C44B6545EC6B7CB77F329D
+      1D6D3D6E449FE77BFFF3FB4E2C79188ED7E2F7EFCFEFAA8867C09558786ECC8A
+      F0940EEFFC6FE1A97E8CF0D2FCBFA67DA91DBCF6B5B17F8FB9FFBE06B0AF0190
+      67003CE797D63D80A4A335FEDFB79794C55AFF92BD8AC5FF146B5DC37D96FB89
+      DF21883E3F8DFADDB3FFF4EC9F3DF6E76CFB39FACE1CFD6E8E3EDBDF99E9F11B
+      89DF2FC30F135F5E358BF099B97E5AE7BECC671D1EDEF3ECD492FE5FDB7F65BB
+      6D617F2BFFB7B07688DADBEAB95D6FDE593AFB419F3994CE8EF2CF97CBC5C497
+      72381C2662CD3DDE9871B809CA5FCB3BB159F0543928FB25578BC667FB5E3EDB
+      B7949F13C47FD28DB4DF33DFC7E33179A4E4AD17C5E72EA4DA65F8A8FD5B1F13
+      ECABFC42F587CB1FB4FF75DCCEFF91FED7E3B78DF86D851FC7F1EEE7F277125F
+      7F8FD2C5F1352BE943EC4B6541EA2FE96AADFD7AFCD3B99A57E23D714B9EE795
+      39EBD4F82B578B85AF7558ED5BCBEFC9CB2DE9BF47F47FB4FFAD95FB22DF3FB6
+      FEBF9B19F947CB214A7CCE9D7182F09C5D0B4FE56CD6E423E58FFAAFFEFE96F6
+      D7E0A3F1BFE5FD1FF2DBABB7
+    }
   end
 end

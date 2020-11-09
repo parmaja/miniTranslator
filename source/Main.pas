@@ -44,6 +44,7 @@ type
     MenuItem1: TMenuItem;
     ReopenFilesMnu: TMenuItem;
     GroupsList: TComboBox;
+    ToolbarImageList: TImageList;
     WorkPathMnu: TMenuItem;
     OptionsMnu: TMenuItem;
     ProjectOptionsMnu: TMenuItem;

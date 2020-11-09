@@ -130,8 +130,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="8"/>
-        <TopLine Value="25"/>
-        <CursorPos X="11" Y="47"/>
+        <TopLine Value="26"/>
+        <CursorPos X="58" Y="27"/>
         <UsageCount Value="102"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -164,12 +164,12 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="1235"/>
-        <CursorPos X="37" Y="1247"/>
+        <TopLine Value="1236"/>
+        <CursorPos X="114" Y="1238"/>
         <UsageCount Value="102"/>
         <Bookmarks Count="2">
-          <Item0 X="5" Y="841" ID="1"/>
-          <Item1 X="3" Y="1195" ID="2"/>
+          <Item0 X="5" Y="842" ID="1"/>
+          <Item1 X="3" Y="1196" ID="2"/>
         </Bookmarks>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -819,7 +819,7 @@
         <Loaded Value="True"/>
       </Unit112>
     </Units>
-    <JumpHistory Count="29" HistoryIndex="28">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="Setups.pas"/>
         <Caret Line="92" TopLine="62"/>
@@ -929,6 +929,10 @@
         <Filename Value="Main.pas"/>
         <Caret Line="52" Column="32" TopLine="24"/>
       </Position29>
+      <Position30>
+        <Filename Value="Main.pas"/>
+        <Caret Line="1245" Column="69" TopLine="1235"/>
+      </Position30>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
@@ -959,7 +963,6 @@
     </CodeGeneration>
     <Linking>
       <Debugging>
-        <UseHeaptrc Value="True"/>
         <TrashVariables Value="True"/>
         <UseExternalDbgSyms Value="True"/>
       </Debugging>
@@ -982,7 +985,7 @@
         <WatchScope Value="wpsLocal"/>
         <WatchKind Value="wpkWrite"/>
         <Source Value="Main.pas"/>
-        <Line Value="1160"/>
+        <Line Value="1161"/>
       </Item1>
     </BreakPoints>
     <Exceptions Count="3">
