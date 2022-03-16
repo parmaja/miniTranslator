@@ -3,7 +3,7 @@ unit trsProjects;
  * This file is part of the "Mini Translator" http://www.sourceforge.net/projects/minilib
  *
  * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
- * @author    Zaher Dirkey <zaher at parmaja dot com>
+ * @author    Zaher Dirkey 
  *}
 
 {$mode objfpc}{$H+}
