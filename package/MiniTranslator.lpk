@@ -5,12 +5,13 @@
     <Name Value="MiniTranslator"/>
     <AddToProjectUsesSection Value="True"/>
     <Author Value="Zaher Dirkey"/>
+    <AutoUpdate Value="OnRebuildingAll"/>
     <CompilerOptions>
       <Version Value="11"/>
       <PathDelim Value="\"/>
       <SearchPaths>
         <IncludeFiles Value="$(ProjOutDir)"/>
-        <OtherUnitFiles Value=".;.."/>
+        <OtherUnitFiles Value=".."/>
         <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
