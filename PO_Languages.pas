@@ -15,7 +15,7 @@ unit PO_Languages;
 interface
 
 uses
-  SysUtils, Variants, Classes, Contnrs,
+  SysUtils, Variants, Classes, Contnrs, mnUtils, mnTypes,
   mnLangClasses;
 
 type
@@ -83,7 +83,7 @@ type
 implementation
 
 uses
-  StrUtils, mnUtils;
+  StrUtils;
 
 const
   ssMsgId = 'msgid';

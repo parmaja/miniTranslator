@@ -3,6 +3,7 @@
   <Package Version="5">
     <PathDelim Value="\"/>
     <Name Value="MiniTranslator"/>
+    <AddToProjectUsesSection Value="True"/>
     <Author Value="Zaher Dirkey"/>
     <CompilerOptions>
       <Version Value="11"/>
@@ -19,22 +20,18 @@
     <Files>
       <Item>
         <Filename Value="..\FluxBB_Parser.pas"/>
-        <AddToUsesPkgSection Value="False"/>
         <UnitName Value="FluxBB_Parser"/>
       </Item>
       <Item>
         <Filename Value="..\mnLangClasses.pas"/>
-        <AddToUsesPkgSection Value="False"/>
         <UnitName Value="mnLangClasses"/>
       </Item>
       <Item>
         <Filename Value="..\mnLangSupports.pas"/>
-        <AddToUsesPkgSection Value="False"/>
         <UnitName Value="mnLangSupports"/>
       </Item>
       <Item>
         <Filename Value="..\PO_Languages.pas"/>
-        <AddToUsesPkgSection Value="False"/>
         <UnitName Value="PO_Languages"/>
       </Item>
     </Files>

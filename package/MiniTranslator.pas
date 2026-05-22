@@ -7,6 +7,9 @@ unit MiniTranslator;
 {$warn 5023 off : no warning about unused units}
 interface
 
+uses
+  FluxBB_Parser, mnLangClasses, mnLangSupports, PO_Languages;
+
 implementation
 
 end.
