@@ -25,10 +25,10 @@ interface
 
 uses
   SysUtils, Variants, Classes,
-  Contnrs, RTLConsts;
+  Contnrs, RTLConsts, mnLangClasses;
 
 type
-  TINILangFile = class(TLangFile)
+  TINILangFile = class(TLangFiler)
   private
     FLine: Integer;
   protected

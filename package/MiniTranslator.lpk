@@ -9,7 +9,7 @@
       <PathDelim Value="\"/>
       <SearchPaths>
         <IncludeFiles Value="$(ProjOutDir)"/>
-        <OtherUnitFiles Value="."/>
+        <OtherUnitFiles Value=".;.."/>
         <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
@@ -18,25 +18,29 @@
     <Version Major="1" Release="1"/>
     <Files>
       <Item>
-        <Filename Value="mnLangClasses.pas"/>
+        <Filename Value="..\FluxBB_Parser.pas"/>
+        <AddToUsesPkgSection Value="False"/>
+        <UnitName Value="FluxBB_Parser"/>
+      </Item>
+      <Item>
+        <Filename Value="..\mnLangClasses.pas"/>
+        <AddToUsesPkgSection Value="False"/>
         <UnitName Value="mnLangClasses"/>
       </Item>
       <Item>
-        <Filename Value="mnLangSupports.pas"/>
+        <Filename Value="..\mnLangSupports.pas"/>
+        <AddToUsesPkgSection Value="False"/>
         <UnitName Value="mnLangSupports"/>
       </Item>
       <Item>
-        <Filename Value="PO_Languages.pas"/>
+        <Filename Value="..\PO_Languages.pas"/>
+        <AddToUsesPkgSection Value="False"/>
         <UnitName Value="PO_Languages"/>
-      </Item>
-      <Item>
-        <Filename Value="FluxBB_Parser.pas"/>
-        <UnitName Value="FluxBB_Parser"/>
       </Item>
     </Files>
     <RequiredPkgs>
       <Item>
-        <PackageName Value="MiniCommons"/>
+        <PackageName Value="MiniLib"/>
       </Item>
       <Item>
         <PackageName Value="FCL"/>
